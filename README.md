@@ -1,6 +1,7 @@
 ## Hi, I'm Rafae
 
 **Software engineer — AI (MCP & RAG) · backend · AWS · automation.**
+
 I build the backend that lets AI work safely with real company data: MCP servers behind an
 auth and permissions layer, data pipelines on AWS, and the automation around them.
 
