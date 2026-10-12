@@ -47,7 +47,7 @@ fails closed.
 
 ### Side projects
 
-| | |
+| Project | What it is |
 |---|---|
 | 🌐 [**rafaegill.com**](https://rafaegill.com) | My portfolio. Next.js + Supabase. |
 | 🎟️ [**On The Move**](https://onthemovebh.com) | Freelance: members host events, take bookings and pay by QR. About 70 users. |
@@ -55,7 +55,7 @@ fails closed.
 
 ### Stack
 
-| | |
+| Area | Tools |
 |---|---|
 | **Languages** | Python · Java · TypeScript · JavaScript · PHP · SQL · C/C++ |
 | **Backend & AI** | FastAPI · Flask · Node.js · Laravel · MCP · RAG · LangChain · n8n |
