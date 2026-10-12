@@ -13,11 +13,13 @@ auth and permissions layer, data pipelines on AWS, and the automation around the
 
 ### Featured: [mcp-gatekeeper](https://github.com/rafae-gill/mcp-gatekeeper)
 
-**Control which people can use which AI tools, and keep a record of who used what.**
-When a whole team shares MCP servers, someone has to decide who may run which tool, and
-when, and be able to answer "who did that?" afterwards. mcp-gatekeeper sits in front of
-the server and checks every tool call against the caller's own key. It's the open-source
-core of the platform I run in production for about 50 people.
+**Let a team's AI agents use company data, but only the parts each person should see.**
+
+Most MCP servers are all-or-nothing: connect, and you get every tool and every table.
+mcp-gatekeeper decides it person by person: which tools, which data, which hours, how
+many calls a minute, with every call in an audit log. Access lives on each key, so it
+changes live with no redeploy. It's the open-source core of the platform I run in
+production for about 50 people, including in front of a Redshift warehouse.
 
 <a href="https://github.com/rafae-gill/mcp-gatekeeper"><img src="assets/mcp-gatekeeper-demo.gif" alt="mcp-gatekeeper demo" width="640"></a>
 
