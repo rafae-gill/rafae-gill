@@ -13,11 +13,11 @@ auth and permissions layer, data pipelines on AWS, and the automation around the
 
 ### Featured: [mcp-gatekeeper](https://github.com/rafae-gill/mcp-gatekeeper)
 
-MCP tells a server *who* is calling. It doesn't say which of thirty tools that person may use,
-when, or what gets written down afterwards. **mcp-gatekeeper** is the authorization layer I
-run in front of a set of production MCP servers, open-sourced: per-key tool allowlists, time
-windows, claim-link key issuance (no secret ever goes through email), and an audit log. It
-fails closed.
+**Control which people can use which AI tools, and keep a record of who used what.**
+When a whole team shares MCP servers, someone has to decide who may run which tool, and
+when, and be able to answer "who did that?" afterwards. mcp-gatekeeper sits in front of
+the server and checks every tool call against the caller's own key. It's the open-source
+core of the platform I run in production for about 50 people.
 
 <a href="https://github.com/rafae-gill/mcp-gatekeeper"><img src="assets/mcp-gatekeeper-demo.gif" alt="mcp-gatekeeper demo" width="640"></a>
 
