@@ -23,12 +23,24 @@ production for about 50 people, including in front of a Redshift warehouse.
 
 <a href="https://github.com/rafae-gill/mcp-gatekeeper"><img src="assets/mcp-gatekeeper-demo.gif" alt="mcp-gatekeeper demo" width="640"></a>
 
-### Now building: RAG for MCP 🔨
+### Featured: [mcp-tool-router](https://github.com/rafae-gill/mcp-tool-router), RAG for tools
 
-- **Semantic tool router.** With dozens of MCP tools, sending every description to the
-  model on every call gets slow and expensive. This retrieves only the tools relevant to a
-  request, and only the ones the caller's key is allowed to use, measured with a recall@k
-  eval.
+Give each AI agent only the tools it needs, and only the ones its user is allowed to use.
+It filters by permission first, then runs hybrid search (BM25 + embeddings, plus example
+requests per tool). Evaluated three ways:
+
+| | Result |
+|---|---|
+| 1,351 real user requests ([BFCL](https://proceedings.mlr.press/v267/patil25a.html), 528 tools) | right tool in the **top 5: 92%**, top 10: 96% |
+| [ToolRet](https://arxiv.org/abs/2503.01763) benchmark (44k tools) | hybrid beats keyword and embedding search in every setting |
+| Permission-aware vs ordinary search | forbidden tools shown: **0%** vs 63–88% of requests |
+
+The finding I'd most want other people to know: when the same AI writes both your test set
+and your enrichment, the measured gain was inflated about 10× (+32 points vs +3 on real
+requests).
+
+### Now building 🔨
+
 - **Schema-RAG text-to-SQL.** Retrieves the right tables and columns from a large warehouse
   schema before the model writes SQL.
 - **"Ask my portfolio".** A chatbot over my own work, on pgvector.
