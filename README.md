@@ -18,8 +18,8 @@ auth and permissions layer, data pipelines on AWS, and the automation around the
 Most MCP servers are all-or-nothing: connect, and you get every tool and every table.
 mcp-gatekeeper decides it person by person: which tools, which data, which hours, how
 many calls a minute, with every call in an audit log. Access lives on each key, so it
-changes live with no redeploy. It's the open-source core of the platform I run in
-production for about 50 people, including in front of a Redshift warehouse.
+changes live with no redeploy. It's built from patterns I use running MCP servers for a
+team.
 
 <a href="https://github.com/rafae-gill/mcp-gatekeeper"><img src="assets/mcp-gatekeeper-demo.gif" alt="mcp-gatekeeper demo" width="640"></a>
 
