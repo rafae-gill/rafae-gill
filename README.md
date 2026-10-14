@@ -23,11 +23,13 @@ production for about 50 people, including in front of a Redshift warehouse.
 
 <a href="https://github.com/rafae-gill/mcp-gatekeeper"><img src="assets/mcp-gatekeeper-demo.gif" alt="mcp-gatekeeper demo" width="640"></a>
 
-### Featured: [mcp-tool-router](https://github.com/rafae-gill/mcp-tool-router), RAG for tools
+### Featured: [mcp-tool-rag](https://github.com/rafae-gill/mcp-tool-rag), RAG for AI tools
 
 Give each AI agent only the tools it needs, and only the ones its user is allowed to use.
 It filters by permission first, then runs hybrid search (BM25 + embeddings, plus example
 requests per tool). Evaluated three ways:
+
+<a href="https://github.com/rafae-gill/mcp-tool-rag"><img src="assets/mcp-tool-rag-demo.gif" alt="mcp-tool-rag demo: same request, two people, different tools" width="640"></a>
 
 | | Result |
 |---|---|
